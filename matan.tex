@@ -7,6 +7,7 @@
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage{float}
 \graphicspath{{img/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \begin{document}
@@ -175,10 +176,41 @@
          \section{Функция комплексной переменной}
             \subsection{Предел}
                 \begin{figure}[h]
-                  \includegraphics[width=0.6\linewidth]{complex_epsolon_example}
+                  \includegraphics[width=0.6\linewidth]{complex_epsilon_example}
                   \caption{Эпсилон-окрестность точки z}
                   \label{ris:complex_epsolon_example}
                 \end{figure}
-                $\forall \epsilon > 0 \exists N : \forall n>N $ :\\
-                $|z_{n}-z|<\epsilon$ 
+                $\forall \epsilon > 0 \exists N : \forall n>N $ : 
+                $|z_{n}-z|< \epsilon$\\
+             Для функции двух переменных предел отдельно для каждой переменной $ z_{n} \rightarrow z,n \rightarrow \infty \Leftrightarrow x_{n} \rightarrow x,y_{n} \rightarrow y$\\
+             А для функции комлпексной переменной\\ \begin{math} \begin{cases} x_{n} \rightarrow x \\ y_{n} \rightarrow y \end{cases} \Rightarrow 
+             \begin{cases} r_{n} \rightarrow r \\ \phi_{n} \rightarrow \phi \end{cases} \end{math}
+              , \begin{nobreak} $\phi \neq 0$, $\phi \neq \infty$ \end{nobreak} 
+              \newpage
+           \subsection{Комплексная функция с вещественным аргументом}
+             $ t \in R $ , $z \in Z z=f(t) \Rightarrow \begin{cases} x(t)\\y(t) \end{cases} $ - кривая на плоскости \footnote{в данном случае на комплексной}.\\
+             $f(t)$ непрерывная, дифференцируема, есди $x(t)$ и $y(t)$ непрерывны и дифференцируемы.\\
+             \begin{figure}[H]
+                  \includegraphics[width=0.6\linewidth]{complex_imagine_example}
+                  \caption{Отображение значений комплексной функции}
+                  \label{ris:complex_imagine_example}
+              \end{figure}
+         Функция определена на плоскости если кажой точке e в E\footnote{Области определения функции} соответствует точка g в G\footnote{ Области допустисых значений}.\\ Задать функцию комплексной переменной $\Leftrightarrow$ задать $u(x,y)$ и $v(x,y)$ вещественных функций от комплексного аргумента.\\
+         Предел для функции комплексной переменной аналогичен пределу для функции нескольких переменных
+           \begin{enumerate}
+             \item $A=lim(f(z))$\\
+             $z \rightarrow z_{0} \forall \epsilon>0 \exists \delta>0 \forall z \in U _{ \delta }(z_{0} \cap E)$ : $|A-f(z)|< \epsilon$
+             \item $A=\infty$ \\
+             $\forall \epsilon>0 \exists \delta>0 \forall z \in U _{ \delta }(z_{0} \cap E)$ :$ U_{\epsilon}(\infty) \Leftrightarrow |f(z)|< \frac{1}{\epsilon}$
+           \end{enumerate}
+            \begin{figure}[H]
+                  \includegraphics[width=0.6\linewidth]{complex_imagine_example2}
+                  \caption{Отображение значений комплексной функции в окрестности точки}
+                  \label{ris:complex_imagine_example2}
+            \end{figure}
+            Функция непрерывна в $z_{0}$, если $\exists lim_{z \rightarrow z_{0}}$, $z \in E$\\
+            Непрерывность в $\infty$, если существует $lim_{z \rightarrow \infty} f(z)$, доопределяют функцию f(z), говоря что в точке $\infty f(z)=A$. Равномерная непрерывность отличается от непрерывности тем, что $\delta$ одинаковый для предела во всех точках множества $E$.
+            \newpage
+            \subsection{Теорема Кантора}
+            Функция непрерывна на компактном\footnote{замкнутом} множестве является равномерно непрерывной
 \end{document} 
