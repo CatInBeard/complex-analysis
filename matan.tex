@@ -212,5 +212,87 @@
             Непрерывность в $\infty$, если существует $lim_{z \rightarrow \infty} f(z)$, доопределяют функцию f(z), говоря что в точке $\infty f(z)=A$. Равномерная непрерывность отличается от непрерывности тем, что $\delta$ одинаковый для предела во всех точках множества $E$.
             \newpage
             \subsection{Теорема Кантора}
-            Функция непрерывна на компактном\footnote{замкнутом} множестве является равномерно непрерывной
+            Если функция непрерывна на компактном\footnote{замкнутом и ограниченом} множестве, функция является равномерно непрерывной
+            \bigskip
+            \subsection{Производная функции комплексной переменной}
+            Производная получается аналогично с функцией одной переменной \footnote{В функции нескольких переменных производной в понимании как у функции одной переменной не существует, там есть $\frac{df}{dx}$ \ldots в виде $f^{\prime}_{x}$ \ldots}
+            $\Delta t = z - z_{0}, z \in E $ \\
+            \let\thefootnote\relax\footnote{$ \\ lim(a+b) = lim(a)+lim(b)$ \\ $lim(\frac{a}{b})=\frac{lim(a)}{lim(b)},b \neq 0$}
+            $f^{\prime}(z_{0}) lim_{\Delta t\rightarrow 0} \frac{f(z)-f(z_{0})}{\Delta z}$ 
+            \bigskip
+            \subsubsection*{Свойства производной:}
+            $f(z)=const \Rightarrow f^{\prime}(z)=0$\\
+            (Дополнить позже)
+            \newpage
+            \subsection{Условия дифференцируемости Коши-Римана}
+            \footnotemark \footnotetext{Иногда называется условием Эйлера-Де ламбера}
+            $w=f(z)$ - однозначная функция, для того чтобы существовал $f^{\prime}(z)$ необходимо:
+            \begin{enumerate}
+              \item $\frac{\partial u}{\partial x}$;  $\frac{\partial u}{\partial y}$ ;  $\frac{\partial v}{\partial x}$;  $\frac{\partial v}{\partial y}$  существуют
+              \item $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ ; $\frac{\partial v}{\partial x} = - \frac{\partial u}{\partial y}$
+            \end{enumerate}
+            \subsubsection*{Доказательство:}
+            $\Delta z$ может иметь любое значение, это вектор, возможен случай, когда $\vec{z} || oX$ или $\vec{z} || oY$. $\Delta z= \Delta x +i \Delta y $
+            \begin{enumerate}
+              \item $\Delta y=0 \Leftrightarrow \Delta z || \Delta x$, $\Delta z = \Delta x$\\
+              $lim_{\Delta x \rightarrow 0} \frac{u(x)+iv(x)-u(x_{0})-iv(x_{0})}{\Delta x}=$\\
+            $lim_{\Delta x \rightarrow 0} \frac{u(x)-u(x_{0})}{\Delta x}+\frac{v(x)-iv(x_{0})}{\Delta x}$ первая дробь - действительная часть, вторая дроб - мнимая\\
+            $\frac{\partial u}{\partial x} +i \frac{\partial v}{\partial x}=f^{\prime}(z_{0})$
+            \item $\Delta x=0 \rightarrow \Delta z = \Delta y$\\
+            $lim_{\Delta x \rightarrow 0} \frac{u(y)+iv(y)-u(y_{0})-iv(y_{0})}{i \Delta y}=$\\
+            $\frac{\partial v}{\partial y} + \frac{\partial u}{i \partial y}=\frac{\partial v}{\partial y} - i \frac{\partial u}{\partial y}=f^{\prime}(z_{0})$
+            \end{enumerate}
+            \subsubsection*{Теорема:}
+            пусть $u$, $v$,$\frac{\partial u}{\partial x}$,$\frac{\partial v}{\partial x}$,$\frac{\partial u}{\partial y}$,$\frac{\partial v}{\partial y}$ непрерывны + условие Коши-Римана. Тогда $f(z)$ диффиринцируема в точке $z_{0}$, если существует предел 
+            \begin{equation}
+              f^{\prime}(z_{0})=lim_{\Delta z_{0} \rightarrow 0} \frac{f(z)-f(z_{0})}{\Delta z}
+            \end{equation}
+            \bigskip
+            \begin{equation}
+              \Delta f= \Delta u + i \Delta v
+            \end{equation}
+            Если функция имеет непрерывные частные производные, то она дифференцируемая
+            \begin{equation}
+              \Delta u=\frac{d u}{d x} \Delta x + \Delta u=\frac{d u}{d y} \Delta y + \epsilon_{1}
+            \end{equation}
+            \begin{equation}
+              \Delta v=\frac{d v}{d x} \Delta x + \Delta u=\frac{d V}{d y} \Delta y + \epsilon_{2}
+            \end{equation}
+            При этом $\epsilon_{1}=o(\Delta z)$. Тогда:
+            \begin{equation}\label{eq:find_df}
+              \frac{\Delta f}{\Delta z}=\frac{\frac{d u}{d x} \Delta x + \Delta u=\frac{d u}{d y} \Delta y + \epsilon_{1} + i (\frac{d v}{d x} \Delta x + \Delta u=\frac{d V}{d y} \Delta y + \epsilon_{2})}{\Delta z}
+            \end{equation}
+            Так как $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ ; $\frac{\partial v}{\partial x} = - \frac{\partial u}{\partial y}$, а $\frac{\Delta x+i \Delta y}{\Delta z}=1$, тогда перепишем формулу \ref{eq:find_df}  в виде:
+            \begin{equation}
+              \frac{\Delta f}{\Delta z}=\frac{\partial u}{\partial x} + i \frac{\partial d}{\partial x}+ \frac{\epsilon_{1}+\epsilon_{2}}{\Delta z}
+            \end{equation}
+            Так как $\epsilon_{1}$ и $\epsilon_{1}$ - это $o(\Delta z)$, то это слогаемое отбрасывается и получается:
+              \begin{equation}
+                f^{\prime}=\frac{\partial u}{\partial x} + i \frac{\partial d}{\partial x}
+              \end{equation}
+            \subsection{Условия Коши-Римана в полярной системе координат}
+            $x=r cos \phi $ ; $y= r sin \phi$\\
+          Тогда:
+          \begin{equation}
+            \frac{\partial u}{\partial r}=\frac{\partial u}{\partial x} \frac{\partial x}{\partial r} + \frac{\partial u}{\partial y} \frac{\partial y}{\partial r}  
+          \end{equation}
+          При этом $\frac{\partial x}{\partial r}=cos \phi$ и $\frac{\partial u}{\partial r}=sin \phi$, получим:
+          \begin{equation}
+            \frac{\partial u}{\partial r}=\frac{\partial u}{\partial x} cos \phi + \frac{\partial u}{\partial y} sin \phi  
+          \end{equation}
+          Для производной по $\phi$:
+          \begin{equation}
+            \frac{\partial u}{\partial \phi}=\frac{\partial u}{\partial x} \frac{\partial x}{\partial \phi} + \frac{\partial u}{\partial y} \frac{\partial y}{\partial \phi}  
+          \end{equation}
+          При этом $\frac{\partial x}{\partial \phi}=r sin \phi$ и $\frac{\partial u}{\partial \phi}=r cos \phi$, получим:
+          \begin{equation}
+            \frac{\partial u}{\partial \phi}=\frac{\partial u}{\partial x} r sin \phi + \frac{\partial u}{\partial y} r cos \phi  
+          \end{equation}
+        Аналогчно для производных $v$:
+          \begin{equation}
+            \frac{\partial v}{\partial r}=\frac{\partial v}{\partial x} cos \phi + \frac{\partial v}{\partial y} sin \phi  
+          \end{equation}
+          \begin{equation}
+            \frac{\partial v}{\partial \phi}=\frac{\partial v}{\partial x} r sin \phi + \frac{\partial v}{\partial y} r cos \phi  
+          \end{equation}
 \end{document} 
