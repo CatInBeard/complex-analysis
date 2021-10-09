@@ -31,17 +31,17 @@
             \begin{equation}\label{eq:algebraik_form_complex_w}
                 w=u+iv
             \end{equation}
-            Формула \ref{eq:algebraik_form_complex} - представление комплексного числа в алгебраическом виде. $x=Re(z)$ - вещественная часть комплексного числа (англ. real) $y=Im(z)$ - мнимая часть комплексного числа (англ. imagine)\\
+            Формула \ref{eq:algebraik_form_complex} --- представление комплексного числа в алгебраическом виде. $x=Re(z)$ --- вещественная часть комплексного числа (англ. \textit{real}) $y=Im(z)$ --- мнимая часть комплексного числа (англ. \textit{imaginary})\\
             \begin{equation}\label{eq:exponential_form_complex}
                 z=re^{i\phi}
             \end{equation}
             \begin{equation}\label{eq:trigonometric_form_complex}
-                z=r(cos(\phi)+i sin(\phi))
+                z=r(cos\phi+i sin\phi)
             \end{equation}
-          Формула \ref{eq:exponential_form_complex} - представление комплексного числа в показательной, формула         \ref{eq:trigonometric_form_complex} - в тригонометрической форме.\\
-            Z \footnote{Часто множество комплексных чисел обозначают $C$, но мы так делать не будем, так как это обозначение сопадает с множеством непрерывных функкций} - множество комплексных чисел, т.е. комплексная плоскость. Если задаётся несколько плоскостей, то вторая задаётся буквой W и форумула \ref{eq:algebraik_form_complex_w} соответственно.
+          Формула \ref{eq:exponential_form_complex} --- представление комплексного числа в показательной, формула         \ref{eq:trigonometric_form_complex} --- в тригонометрической форме.\\
+            Z \footnote{Часто множество комплексных чисел обозначают $C$, но мы так делать не будем, так как это обозначение совпадает с множеством непрерывных функкций} --- множество комплексных чисел, т.е. комплексная плоскость. Если задаётся несколько плоскостей, то вторая задаётся буквой W и формула \ref{eq:algebraik_form_complex_w} соответственно.
             \begin{equation}\label{eq:сomplex_module}
-                |z|=sqrt(x^2+y^2)
+                |z|=\sqrt{x^2+y^2}
             \end{equation}
             Модуль комплексного числа определяется по формуле \ref{eq:сomplex_module}
             \begin{figure}[h]
@@ -55,12 +55,12 @@
               \begin{equation}\label{eq:complex_polar_example_y}
                   |z|sin(\phi)=y
               \end{equation}
-            Формулы \ref{eq:complex_polar_example_x} и \ref{eq:complex_polar_example_y} нужны для представления полярного угла, являющегося $arg(z) $
-            при этом важно, что $arg(z) \neq arctg(y/x)$, т.к. это корректно только для положительной полуплоскости
+            Формулы \ref{eq:complex_polar_example_x} и \ref{eq:complex_polar_example_y} нужны для представления полярного угла, являющегося $arg(z)$. 
+            При этом важно, что $arg(z) \neq arctg(y/x)$, т.к. это корректно только для положительной полуплоскости
             \begin{equation}\label{eq:Arg_z}
                 Arg(z)=\phi+2 \pi n
             \end{equation}
-            Формуле \ref{eq:Arg_z} - формула аргумента уомплексного числа, т.е. множества чисел, отстоящих друг от дргуа на $2 \pi$, важно что Arg пишется с большой буквы. $arg(z)$ - главное значение аргумента, 
+            Формуле \ref{eq:Arg_z} - формула аргумента комплексного числа, т.е. множества чисел, отстоящих друг от друга на $2 \pi$, важно что Arg пишется с большой буквы. $arg(z)$ --- главное значение аргумента, 
             \begin{math} 
               arg(z) \in 
               \begin{cases}
@@ -69,11 +69,11 @@
               \end{cases} 
             \end{math}\\
             \footnotetext{Удобнее работать с чётностью, разрыв z будет в отрицательной полуплоскости, а в ней работают в реальных задачах реже}
-            Комплексные числа работают с алгебраическими операциями и сохраняют свойства ассоциативности, дистрибутивности и комутативности.\\
+            Комплексные числа работают с алгебраическими операциями и сохраняют свойства ассоциативности, дистрибутивности и коммутативности.\\
             \begin{equation}\label{eq:Arg_z}
                 z_{1} \pm z_{2}=(x_{1} \pm x_{2}) + i (y_{1} \pm y_{2})
             \end{equation}
-          Сложение комплексных чисел в алгебраической форме\footnote{В полярной системе складывать комплексные числа сложнее сложнее}
+          Сложение комплексных чисел в алгебраической форме\footnote{В полярной системе складывать комплексные числа сложнее}
             \begin{figure}[h]
                 \includegraphics[width=0.8\linewidth]{adding_example}
                 \caption{Графическое представление сложения двух комплексных чисел}
@@ -82,7 +82,7 @@
             \begin{equation}
                z_{1} \cdot z_{2}=r_{1} r_{2} e^{i (\phi_{1} + \phi_{2})}              
             \end{equation}
-            Уножение комплексных чисел в показательной форме\footnote{Для умножения удобнее использовать показательную, а не албебраическую форму}. Аналогично и с делением:
+            Умножение комплексных чисел в показательной форме\footnote{Для умножения удобнее использовать показательную, а не алгебраическую форму}. Аналогично и с делением:
             \begin{equation}
                \frac{z_{1}}{z_{2}}=\frac{r_{1}}{r_{2}} e^{i (\phi_{1} - \phi_{2})}              
             \end{equation}
@@ -90,7 +90,7 @@
             \begin{equation}
                z=r^{n} e^{i n \phi}              
             \end{equation}
-            $ \overline{z} $, иногда $z^{*}$ - комплексно-сопряженное число\footnote{Точка отражается относитеьно вещественной оси}, определим z из формулы \ref{eq:algebraik_form_complex}, тогда:
+            $ \overline{z} $, иногда $z^{*}$ --- комплексно-сопряженное число\footnote{Точка отражается относитеьно вещественной оси}, определим z из формулы \ref{eq:algebraik_form_complex}, тогда:
             \begin{equation}\label{complex_conjugate}
                \overline{z}=x-i y              
             \end{equation}
@@ -107,7 +107,7 @@
             \begin{equation}
                z \cdot \overline{z}=|z^{2}|
             \end{equation}
-          Извлечение корня n степени из комплексного числа\footnote{Важно что Arg(z) - с большой буквы, т.к. значение не одно}, $n \in N $
+          Извлечение корня n степени из комплексного числа\footnote{Важно, что Arg(z) - с большой буквы, т.к. значение не одно}, $n \in N $
             \begin{equation}
               \sqrt[n]{z}=\sqrt[n]{r} e^{\frac{i}{n} Arg(z)}=\sqrt[n]{r} e^{\frac{i}{n} \phi + 2 \pi k}
             \end{equation}
@@ -122,7 +122,7 @@
                 \caption{Стереографическая проекция на сфере Римана}
                 \label{ris:stereo_example}
             \end{figure}
-            $X o Y$ - комлексная плосокость. Переобозначим в трёхмерной плоскости. Построим сферу радиусом R \footnote{Чаще всего радиус задают как R=$\frac{1}{2}$ , однако, он может быть любым} с центром в точке (0,0,R). Сопоставим каждую точку на комплескной плоскости с точкой на сфере. Для этого проведём прямую из верхней точки сферы (0,0,2R) в точку z на XoY, точка, в которой прямая пересекает сферу - отображениие точки z на сфере. $z=0 \Leftrightarrow (\xi,\zeta,\eta)=\varnothing$ . Аналогично любая точка сферы кроме (0,0,2R) \footnote{$z=0 \Leftrightarrow (\xi,\zeta,\eta)=(0,0,2R)$} может быть сопоставлена с точкой на комплексной плоскости. Для этого из точки (0,0,2R) проводится прямая, проходящая через заданную точку сферы. Точка, в которой прямая пересекает комплексную плоскость, будет отображанием.\\
+            $X o Y$ --- комлексная плоскость. Переобозначим в трёхмерной плоскости. Построим сферу радиусом $R$ \footnote{Чаще всего радиус задают как R=$\frac{1}{2}$ , однако, он может быть любым} с центром в точке (0,0,R). Сопоставим каждую точку на комплекскной плоскости с точкой на сфере. Для этого проведём прямую из верхней точки сферы (0,0,2R) в точку z на $X o Y$, точка, в которой прямая пересекает сферу --- отображение точки z на сфере. $z=0 \Leftrightarrow (\xi,\zeta,\eta)=\varnothing$ . Аналогично, любая точка сферы кроме (0,0,2R) \footnote{$z=0 \Leftrightarrow (\xi,\zeta,\eta)=(0,0,2R)$} может быть сопоставлена с точкой на комплексной плоскости. Для этого из точки (0,0,2R) проводится прямая, проходящая через заданную точку сферы. Точка, в которой прямая пересекает комплексную плоскость, будет отображением.\\
           Формулы для перевода координат:
             \begin{math}
               (0,0,2R),(x,y,0) - $ точки прямой, тогда уравнение этой прямой имеет вид: $\\
@@ -166,8 +166,8 @@
             \item  $x^2+y^2+2y+1>2$
           \end{enumerate}
 
-        Получаем уравнения двух окружностей, решением является то, что находится внутри первой окржности и одновременно снаружи второй, т.е. A$ \backslash $B. Аналогично будет для $y<0$, из уравнений получатся те же две окружности, но решением будет B$ \backslash $A.
-        Решением всей хадачи будет (A$ \backslash $B) $\cup$ (B$ \backslash $A)
+        Получаем уравнения двух окружностей, решением является то, что находится внутри первой окружности и одновременно снаружи второй, т.е. A$ \backslash $B. Аналогично будет для $y<0$, из уравнений получатся те же две окружности, но решением будет B$ \backslash $A.
+        Решением всей задачи будет (A$ \backslash $B) $\cup$ (B$ \backslash $A)
          \begin{figure}[h]
             \includegraphics[width=0.6\linewidth]{complex_solution_example}
             \caption{Решение неравенства $|1+z^{2}|<|2z|$}
@@ -183,19 +183,19 @@
                 $\forall \epsilon > 0 \exists N : \forall n>N $ : 
                 $|z_{n}-z|< \epsilon$\\
              Для функции двух переменных предел отдельно для каждой переменной $ z_{n} \rightarrow z,n \rightarrow \infty \Leftrightarrow x_{n} \rightarrow x,y_{n} \rightarrow y$\\
-             А для функции комлпексной переменной\\ \begin{math} \begin{cases} x_{n} \rightarrow x \\ y_{n} \rightarrow y \end{cases} \Rightarrow 
+             А для функции комплексной переменной\\ \begin{math} \begin{cases} x_{n} \rightarrow x \\ y_{n} \rightarrow y \end{cases} \Rightarrow 
              \begin{cases} r_{n} \rightarrow r \\ \phi_{n} \rightarrow \phi \end{cases} \end{math}
               , \begin{nobreak} $\phi \neq 0$, $\phi \neq \infty$ \end{nobreak} 
               \newpage
            \subsection{Комплексная функция с вещественным аргументом}
-             $ t \in R $ , $z \in Z z=f(t) \Rightarrow \begin{cases} x(t)\\y(t) \end{cases} $ - кривая на плоскости \footnote{в данном случае на комплексной}.\\
-             $f(t)$ непрерывная, дифференцируема, есди $x(t)$ и $y(t)$ непрерывны и дифференцируемы.\\
+             $ t \in R $ , $z \in Z z=f(t) \Rightarrow \begin{cases} x(t)\\y(t) \end{cases} $ --- кривая на плоскости \footnote{в данном случае на комплексной}.\\
+             $f(t)$ непрерывна, дифференцируема, если $x(t)$ и $y(t)$ непрерывны и дифференцируемы.\\
              \begin{figure}[H]
                   \includegraphics[width=0.6\linewidth]{complex_imagine_example}
                   \caption{Отображение значений комплексной функции}
                   \label{ris:complex_imagine_example}
               \end{figure}
-         Функция определена на плоскости если кажой точке e в E\footnote{Области определения функции} соответствует точка g в G\footnote{ Области допустисых значений}.\\ Задать функцию комплексной переменной $\Leftrightarrow$ задать $u(x,y)$ и $v(x,y)$ вещественных функций от комплексного аргумента.\\
+         Функция определена на плоскости, если каждой точке e в E\footnote{Области определения функции} соответствует точка g в G\footnote{ Области допустимых значений}.\\ Задать функцию комплексной переменной $\Leftrightarrow$ задать $u(x,y)$ и $v(x,y)$ вещественных функций от комплексного аргумента.\\
          Предел для функции комплексной переменной аналогичен пределу для функции нескольких переменных
            \begin{enumerate}
              \item $A=lim(f(z))$\\
@@ -212,10 +212,10 @@
             Непрерывность в $\infty$, если существует $lim_{z \rightarrow \infty} f(z)$, доопределяют функцию f(z), говоря что в точке $\infty f(z)=A$. Равномерная непрерывность отличается от непрерывности тем, что $\delta$ одинаковый для предела во всех точках множества $E$.
             \newpage
             \subsection{Теорема Кантора}
-            Если функция непрерывна на компактном\footnote{замкнутом и ограниченом} множестве, функция является равномерно непрерывной
+            Если функция непрерывна на компактном\footnote{замкнутом и ограниченном} множестве, функция является равномерно непрерывной
             \bigskip
             \subsection{Производная функции комплексной переменной}
-            Производная получается аналогично с функцией одной переменной \footnote{В функции нескольких переменных производной в понимании как у функции одной переменной не существует, там есть $\frac{df}{dx}$ \ldots в виде $f^{\prime}_{x}$ \ldots}
+            Производная получается аналогично функции одной переменной \footnote{В функции нескольких переменных производной в понимании как у функции одной переменной не существует, там есть $\frac{df}{dx}$ \ldots в виде $f^{\prime}_{x}$ \ldots}
             $\Delta t = z - z_{0}, z \in E $ \\
             \let\thefootnote\relax\footnote{$ \\ lim(a+b) = lim(a)+lim(b)$ \\ $lim(\frac{a}{b})=\frac{lim(a)}{lim(b)},b \neq 0$}
             $f^{\prime}(z_{0}) lim_{\Delta t\rightarrow 0} \frac{f(z)-f(z_{0})}{\Delta z}$ 
@@ -225,25 +225,25 @@
             (Дополнить позже)
             \newpage
             \subsection{Условия дифференцируемости Коши-Римана}
-            \footnotemark \footnotetext{Иногда называется условием Эйлера-Де ламбера}
-            $w=f(z)$ - однозначная функция, для того чтобы существовал $f^{\prime}(z)$ необходимо:
+            \footnotemark \footnotetext{Иногда называется условием Эйлера-Даламбера}
+            $w=f(z)$ --- однозначная функция, для того чтобы существовал $f^{\prime}(z)$ необходимо:
             \begin{enumerate}
               \item $\frac{\partial u}{\partial x}$;  $\frac{\partial u}{\partial y}$ ;  $\frac{\partial v}{\partial x}$;  $\frac{\partial v}{\partial y}$  существуют
               \item $\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$ ; $\frac{\partial v}{\partial x} = - \frac{\partial u}{\partial y}$
             \end{enumerate}
             \subsubsection*{Доказательство:}
-            $\Delta z$ может иметь любое значение, это вектор, возможен случай, когда $\vec{z} || oX$ или $\vec{z} || oY$. $\Delta z= \Delta x +i \Delta y $
+            $\Delta z$ может иметь любое значение, это вектор, возможен случай, когда $\vec{z} \enspace || \enspace oX$ или $\vec{z} \enspace || \enspace oY$. $\Delta z = \Delta x + i \Delta y $
             \begin{enumerate}
               \item $\Delta y=0 \Leftrightarrow \Delta z || \Delta x$, $\Delta z = \Delta x$\\
               $lim_{\Delta x \rightarrow 0} \frac{u(x)+iv(x)-u(x_{0})-iv(x_{0})}{\Delta x}=$\\
-            $lim_{\Delta x \rightarrow 0} \frac{u(x)-u(x_{0})}{\Delta x}+\frac{v(x)-iv(x_{0})}{\Delta x}$ первая дробь - действительная часть, вторая дроб - мнимая\\
+            $lim_{\Delta x \rightarrow 0} \frac{u(x)-u(x_{0})}{\Delta x}+\frac{v(x)-iv(x_{0})}{\Delta x}$ первая дробь --- действительная часть, вторая дробь --- мнимая\\
             $\frac{\partial u}{\partial x} +i \frac{\partial v}{\partial x}=f^{\prime}(z_{0})$
             \item $\Delta x=0 \rightarrow \Delta z = \Delta y$\\
             $lim_{\Delta x \rightarrow 0} \frac{u(y)+iv(y)-u(y_{0})-iv(y_{0})}{i \Delta y}=$\\
             $\frac{\partial v}{\partial y} + \frac{\partial u}{i \partial y}=\frac{\partial v}{\partial y} - i \frac{\partial u}{\partial y}=f^{\prime}(z_{0})$
             \end{enumerate}
             \subsubsection*{Теорема:}
-            пусть $u$, $v$,$\frac{\partial u}{\partial x}$,$\frac{\partial v}{\partial x}$,$\frac{\partial u}{\partial y}$,$\frac{\partial v}{\partial y}$ непрерывны + условие Коши-Римана. Тогда $f(z)$ диффиринцируема в точке $z_{0}$, если существует предел 
+            пусть $u$, $v$,$\frac{\partial u}{\partial x}$,$\frac{\partial v}{\partial x}$,$\frac{\partial u}{\partial y}$,$\frac{\partial v}{\partial y}$ непрерывны + условие Коши-Римана. Тогда $f(z)$ дифференцируема в точке $z_{0}$, если существует предел 
             \begin{equation}
               f^{\prime}(z_{0})=lim_{\Delta z_{0} \rightarrow 0} \frac{f(z)-f(z_{0})}{\Delta z}
             \end{equation}
@@ -251,7 +251,7 @@
             \begin{equation}
               \Delta f= \Delta u + i \Delta v
             \end{equation}
-            Если функция имеет непрерывные частные производные, то она дифференцируемая
+            Если функция имеет непрерывные частные производные, то она дифференцируема
             \begin{equation}
               \Delta u=\frac{d u}{d x} \Delta x + \Delta u=\frac{d u}{d y} \Delta y + \epsilon_{1}
             \end{equation}
@@ -266,7 +266,7 @@
             \begin{equation}
               \frac{\Delta f}{\Delta z}=\frac{\partial u}{\partial x} + i \frac{\partial d}{\partial x}+ \frac{\epsilon_{1}+\epsilon_{2}}{\Delta z}
             \end{equation}
-            Так как $\epsilon_{1}$ и $\epsilon_{1}$ - это $o(\Delta z)$, то это слогаемое отбрасывается и получается:
+            Так как $\epsilon_{1}$ и $\epsilon_{1}$ - это $o(\Delta z)$, то это слагаемое отбрасывается и получается:
               \begin{equation}
                 f^{\prime}=\frac{\partial u}{\partial x} + i \frac{\partial d}{\partial x}
               \end{equation}
@@ -288,7 +288,7 @@
           \begin{equation}
             \frac{\partial u}{\partial \phi}=\frac{\partial u}{\partial x} r sin \phi + \frac{\partial u}{\partial y} r cos \phi  
           \end{equation}
-        Аналогчно для производных $v$:
+        Аналогично для производных $v$:
           \begin{equation}
             \frac{\partial v}{\partial r}=\frac{\partial v}{\partial x} cos \phi + \frac{\partial v}{\partial y} sin \phi  
           \end{equation}
